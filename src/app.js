@@ -42,8 +42,8 @@ function isAudioPlaying() {
 // play audio of current song
 function playAudio() {
     musicPlayer.classList.add('playing');
-    playBtn.querySelector('i').classList.remove('ph-play-circle');
-    playBtn.querySelector('i').classList.add('ph-pause-circle');
+    playBtn.querySelector('svg').classList.remove('ph-play-circle');
+    playBtn.querySelector('svg').classList.add('ph-pause-circle');
     audio.playbackRate = `${speedOptions[speedIndex]}`;
     audio.play();
 }
@@ -51,8 +51,8 @@ function playAudio() {
 // pause audio of current song
 function pauseAudio() {
     musicPlayer.classList.remove('playing');
-    playBtn.querySelector('i').classList.add('ph-play-circle');
-    playBtn.querySelector('i').classList.remove('ph-pause-circle');
+    playBtn.querySelector('svg').classList.add('ph-play-circle');
+    playBtn.querySelector('svg').classList.remove('ph-pause-circle');
     audio.pause();
 }
 

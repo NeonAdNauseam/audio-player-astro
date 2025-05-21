@@ -1,3 +1,7 @@
+---
+import PlayButton from "./PlayButton.astro"
+---
+
 <div class="music__player">
     <div class="music__player--progress">
       <div class="progress"></div>
@@ -8,7 +12,10 @@
     </button>
   
     <button id="play" class="action">
-      <i class="ph-play-circle"></i>
+
+      <!-- <i class="ph-play-circle"></i> -->
+       <PlayButton class="ph-play-circle" />
+    
     </button>
   
     <button id="next" class="action">
