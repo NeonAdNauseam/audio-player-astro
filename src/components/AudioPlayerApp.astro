@@ -1,5 +1,7 @@
 ---
-import PlayButton from "./PlayButton.astro"
+import PlayIcon from "./PlayIcon.astro";
+import BackIcon from "./BackIcon.astro";
+import NextIcon from "./NextIcon.astro";
 ---
 
 <div class="music__player">
@@ -8,18 +10,22 @@ import PlayButton from "./PlayButton.astro"
     </div>
   
     <button id="prev" class="action">
-      <i class="ph-skip-back-circle"></i>
-    </button>
+      <!-- <i class="ph-skip-back-circle"></i> -->
+       <BackIcon class="ph-skip-back-circle">
+    
+      </button>
   
     <button id="play" class="action">
 
       <!-- <i class="ph-play-circle"></i> -->
-       <PlayButton class="ph-play-circle" />
+       <PlayIcon class="ph-play-circle" />
     
     </button>
   
     <button id="next" class="action">
-      <i class="ph-skip-forward-circle"></i>
+      <!-- <i class="ph-skip-forward-circle"></i> -->
+      <NextIcon class="ph-skip-forward-circle" />
+       
     </button>
   
     <button class="speed"><p>1.0x</p></button>
