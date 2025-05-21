@@ -1,6 +1,11 @@
 {
   "songs": [
     {
+      "title": "Zight Paradise",
+      "audio": "audio/zight-paradise.mp3",
+      "cover": "photos/zight-paradise.jpg"
+    },
+    {
       "title": "Happy Clappy",
       "audio": "audio/happy-clappy.mp3",
       "cover": "photos/happy-clappy.jpg"
